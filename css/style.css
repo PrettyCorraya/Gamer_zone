@@ -1,0 +1,44 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header part start  */
+#nav_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.logo span {
+    color: #FF42A5;
+}
+
+.menu_part a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 32px;
+}
+
+.menu_part .follow {
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+/* Header part end  */
+.banner {}
