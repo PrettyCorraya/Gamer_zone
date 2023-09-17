@@ -23,7 +23,6 @@ body {
 .logo h3 {
     font-size: 45px;
     font-weight: 700;
-    margin: 0;
     margin-left: 10px;
 }
 
@@ -279,3 +278,64 @@ body {
 }
 
 /* Games option part end */
+
+/* Footer part start  */
+#footer_part {
+    padding: 120px 400px;
+    background: #0B0223;
+    text-align: center;
+    align-items: center;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.footer_logo h4 {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+
+.footer_text {
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.footer_icon a {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.footer_icon i {
+    color: white;
+}
+
+.terms_conditions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.terms_conditions h4 {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 40px 0;
+}
+
+#footer_part p {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Footer part end */
