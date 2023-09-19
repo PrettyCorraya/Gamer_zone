@@ -199,10 +199,11 @@ body {
 /* Play games part start  */
 #play_games {
     padding: 100px 150px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
     align-items: center;
+
 }
 
 .play_games_image .picture_1 {
@@ -214,7 +215,7 @@ body {
     height: 40%;
     position: absolute;
     bottom: -25px;
-    left: 545px;
+    left: 480px;
 }
 
 .play_games_text {
@@ -336,18 +337,20 @@ body {
 /* Responsive part start  */
 @media screen and (max-width: 576px) {
     #nav_part {
-        align-items: center;
         padding: 100px 150px 0 150px;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
     }
 
+    .logo {
+        margin-bottom: 50px;
+    }
+
     .menu_part a {
         display: flex;
         justify-content: center;
-        margin: 50px 0;
+        margin-bottom: 50px;
     }
 
     .follow {
@@ -359,9 +362,8 @@ body {
     }
 
     #banner {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 150px 150px 150px;
+
+        padding: 0 150px 0px 150px;
         justify-content: center;
         flex-direction: column-reverse;
         width: 100%;
@@ -382,7 +384,7 @@ body {
     }
 
     #on_games {
-        padding: 0 150px;
+        padding: 100px 150px;
         width: 100%;
     }
 
@@ -392,9 +394,16 @@ body {
     }
 
     #play_games {
-        padding: 150px 150px;
+        padding: 50px 150px;
+        display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        justify-content: center;
+    }
+
+    .play_games_text {
+        text-align: center;
+        margin-left: 0;
     }
 
     .play_games_image .picture_1 {
@@ -403,10 +412,8 @@ body {
     }
 
     .play_games_image .picture_2 {
-        left: 470px;
         width: 25%;
-        height: 18%;
-        bottom: 100px;
+        height: 20%;
     }
 
     #games_option {
@@ -430,6 +437,75 @@ body {
 
     #footer_part {
         padding: 150px 150px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+    #nav_part {
+        padding: 50px 100px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu_part {
+        margin-top: 40px;
+    }
+
+    #banner {
+        flex-direction: column-reverse;
+        padding: 10px 100px;
+        width: 100%;
+    }
+
+    .banner_item {
+        margin-top: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #on_games {
+        padding: 50px 100px;
+        width: 100%;
+    }
+
+    #play_games {
+        padding: 10px 100px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+    }
+
+    .play_games_text h2 {
+        font-size: 33px;
+    }
+
+    .play_games_text p {
+        font-size: 16px;
+    }
+
+    .play_games_image .picture_2 {
+        width: 15%;
+        height: 44%;
+        bottom: -31px;
+        left: 333px;
+    }
+
+    #games_option {
+        padding: 100px 100px;
+        width: 100%;
+    }
+
+    .row_1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #footer_part {
+        padding: 100px 100px;
         width: 100%;
     }
 }
